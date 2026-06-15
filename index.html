@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wayne</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:
+    radial-gradient(circle at center,
+    #0f2348 0%,
+    #08142b 40%,
+    #030812 100%);
+
+    color:white;
+
+    font-family:
+    "Microsoft YaHei",
+    sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* 整体容器 */
+.container{
+    width:90%;
+    max-width:1200px;
+    text-align:center;
+}
+
+/* 顶部小字 */
+.title{
+
+    color:#7f8ea8;
+
+    font-size:18px;
+
+    letter-spacing:8px;
+
+    margin-bottom:80px;
+
+    text-transform:uppercase;
+}
+
+/* 核心发言 */
+.message{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    line-height:1.7;
+
+    text-align:center;
+
+    text-shadow:
+    0 0 15px rgba(255,255,255,.15),
+    0 0 40px rgba(80,120,255,.25);
+
+    animation: glow 4s ease-in-out infinite;
+}
+
+/* 日期 */
+.time{
+
+    margin-top:90px;
+
+    font-size:22px;
+
+    color:#8190aa;
+
+    letter-spacing:2px;
+}
+
+/* 作者 */
+.footer{
+
+    margin-top:20px;
+
+    font-size:15px;
+
+    color:#5a667d;
+}
+
+/* 呼吸光效 */
+@keyframes glow{
+
+    0%{
+        opacity:.9;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.9;
+    }
+}
+
+/* 手机适配 */
+@media(max-width:768px){
+
+    .message{
+        font-size:40px;
+    }
+
+    .title{
+        font-size:14px;
+    }
+
+    .time{
+        font-size:18px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="title">
+        WAYNE'S MESSAGE
+    </div>
+
+    <!-- 以后只改这里 -->
+
+    <div class="message">
+
+        傻子学校官网<br>
+
+        做的怎么垃圾，<br>
+
+        害我半天登不上去了
+
+    </div>
+
+    <!-- 改日期 -->
+
+    <div class="time">
+        2026.06.15
+    </div>
+
+    <div class="footer">
+        Published by Wayne
+    </div>
+
+</div>
+
+</body>
+
+</html>
